@@ -1,0 +1,17 @@
+{
+  "name": "rate-limiter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ioredis": "^2.5.0",
+    "koa": "^2.2.0",
+    "koa-ratelimit": "^4.0.0"
+  },
+  "devDependencies": {
+    "ioredis": "^2.5.0",
+    "koa": "^2.2.0"
+  },
+  "author": "WithGJR",
+  "license": "ISC"
+}
