@@ -2,6 +2,10 @@
 
 A rate limit middleware designed for Koa2.
 
+## Installation
+
+`npm install koa-rate-limiter --save`
+
 ## Usage
 
 ```javascript
@@ -9,7 +13,7 @@ const Koa = require('koa');
 const Redis = require('ioredis');
 const redis = new Redis();
 const app = new Koa();
-const ratelimit = require('./index.js');
+const ratelimit = require('koa-rate-limiter');
 
 app.use(ratelimit({
     db: redis,
