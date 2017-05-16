@@ -1,5 +1,10 @@
 module.exports = function ratelimit(opts) {
-  opts.max = opts.max || 1000;
+  if (typeof opts.db === 'undefined') {
+    throw new Error('`db` option is not specified.');  
+  }
+  if (typeof opts.max === 'undefined') {
+    throw new Error('`max` option is not specified.');  
+  }
 
   return async function ratelimit(ctx, next) {
     var millisecond = 1,
