@@ -1,8 +1,8 @@
 {
   "name": "koa-rate-limiter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Redis-based middleware designed for Koa2",
-  "repository" : "https://github.com/WithGJR/rate-limiter",
+  "repository": "https://github.com/WithGJR/rate-limiter",
   "main": "index.js",
   "devDependencies": {
     "ioredis": "^2.5.0",
